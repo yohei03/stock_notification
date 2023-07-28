@@ -1,0 +1,10 @@
+version: '3'
+services:
+  cite:
+    restart: always
+    build: .
+    container_name: 'app'
+    working_dir: '/var/docker-python'
+    tty: true
+    volumes:
+      - ./app:/var/docker-python/app
